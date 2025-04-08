@@ -1,0 +1,36 @@
+El objetivo de este proyecto es darle a conocer a la empresa ficticia BusMx las métricas relevantes sobre su tienda respecto al año 2021.
+
+
+El dataset se exportará desde un archivo de excel.
+
+La base de datos cuenta con las siguientes columnas:
+
+Encabezados	
+Id:	Identificador de transacción
+payment_status:	Estatus de transacción
+    failed:	transacción fallida
+    charged:	transacción completada
+    attempt:	transacción expirada
+    chargeback:	Contracargo
+device:	Dispositivo utilizado en la transacción
+created_at:	Fecha de transacción
+month:	Mes de transacción
+amount:	Monto de transacción
+antifraud_score:	Calificación de antifraude (score  de riesgo)
+antifraud_action:	Recomendación de antifraude
+payment_type:	Tipo de pago
+credit_card:	Pago con tarjeta de crédito
+paysafecard:	Pago seguro
+store:	Pago en tienda (efectivo)
+card_type:	Tipo de tarjeta
+card_brand:	Marca de tarjeta
+card_bank_name:	Banco
+transporter:	Línea de autobús
+route:	Ruta (origen-destino)
+error_message:	Motivo de rechazo
+
+Para dar respuesta a estas preguntas se utilizó python con la librería pandas y matplotlib. 
+Para visualización de datos se creó un dashboard
+en Power BI: (https://app.powerbi.com/view?r=eyJrIjoiYTYzMDE4NWQtNWU5ZS00NTI5LTgzZWEtNzcxM2Y0NTQ1NjZkIiwidCI6ImY5NGJmNGQ5LTgwOTctNDc5NC1hZGY2LWE1NDY2Y2EyODU2MyIsImMiOjR9)
+
+Se creó un conector con sqlalchemy para poder expotar el dataframe con los datos limpios a una base de datos mysql.
